@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
   
-  func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) { 
+  func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
     if region is CLCircularRegion{
       handleRegionEvent(region)
     }
